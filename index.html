@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <div class="wrap">
+    <div class="container">
+      <div class="inputs">
+        <input class="first-number" type="number" placeholder="Enter the first number" value="">
+        <input class="second-number" type="number" placeholder="Enter the second number" value="">
+      </div>
+      <div class="buttons">
+        <button class="plus">+</button>
+        <button class="minus">-</button>
+      </div>
+      <div class="buttons2">
+        <button class="times">*</button>
+        <button class="divide">÷</button>
+      </div>
+      <button class="button-result">=</button>
+      <div class="equal">
+        <h2>Result:</h2>
+        <p class="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    const resultElement = document.querySelector('.result')
+    const input1 = document.querySelector('.first-number')
+    const input2 = document.querySelector('.second-number')
+    const addition = document.querySelector('.plus')
+    const subtraction = document.querySelector('.minus')
+    const multiplication = document.querySelector('.times')
+    const division = document.querySelector('.divide')
+
+    const submitBtn = document.querySelector('.button-result')
+
+    let action = ''
+
+    addition.onclick = function () {
+      action = '+'
+    }
+    subtraction.onclick = function () {
+      action = '-'
+    }
+    multiplication.onclick = function () {
+      action = '*'
+    }
+    division.onclick = function () {
+      action = '÷'
+    }
+
+    submitBtn.onclick = function () {
+      if (action == '+') {
+        const sum = Number(input1.value) + Number(input2.value)
+        resultElement.textContent = sum
+      } 
+      if (action == '-') {
+        const sum = Number(input1.value) - Number(input2.value)
+        resultElement.textContent = sum
+      }
+      if (action == '*') {
+        const sum = Number(input1.value) * Number(input2.value)
+        resultElement.textContent = sum
+      }
+      if (action == '÷') {
+        const sum = Number(input1.value) / Number(input2.value)
+        resultElement.textContent = sum
+      }
+    }
+
+  </script>
+</body>
+</html>

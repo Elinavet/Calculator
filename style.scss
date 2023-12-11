@@ -1,4 +1,5 @@
 @import url(start.css);
+
 h1 {
   text-align: center;
   margin-top: 20px;
@@ -6,30 +7,29 @@ h1 {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .wrap {
   width: 480px;
   height: 550px;
   border: solid 4px rgb(94, 90, 90);
   margin: 0 auto;
-  background: linear-gradient(to bottom, rgb(206, 220, 231) 0%, rgb(89, 106, 114) 100%);
+  background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
   box-shadow: 3px 3px 5px;
   border-radius: 5px;
   margin-top: 10px;
+  
 }
-
 .container {
   margin-top: 40px;
   padding: 10px;
 }
-
 .inputs {
   display: flex;
   justify-content: space-between;
   flex: 1;
   height: 60px;
+  
+  
 }
-
 .first-number {
   border: solid 2px black;
   width: 50%;
@@ -37,14 +37,14 @@ h1 {
   padding: 10px;
   font-size: 17px;
   transition: 0.15s;
+  &:hover {
+    background-color: rgba(203, 219, 219, 0.231);
+  }
+  &:active {
+    background-color: rgba(238, 241, 241, 0.778);
+  }
+  
 }
-.first-number:hover {
-  background-color: rgba(203, 219, 219, 0.231);
-}
-.first-number:active {
-  background-color: rgba(238, 241, 241, 0.778);
-}
-
 .second-number {
   border: solid 2px black;
   width: 50%;
@@ -52,14 +52,13 @@ h1 {
   padding: 10px;
   font-size: 17px;
   transition: 0.15s;
+  &:hover {
+    background-color: rgba(203, 219, 219, 0.231);
+  }
+  &:active {
+    background-color: rgba(238, 241, 241, 0.778);
+  }
 }
-.second-number:hover {
-  background-color: rgba(203, 219, 219, 0.231);
-}
-.second-number:active {
-  background-color: rgba(238, 241, 241, 0.778);
-}
-
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -68,16 +67,16 @@ h1 {
   margin-bottom: 20px;
   margin-top: 30px;
   color: rgb(75, 70, 70);
-}
 
+}
 .buttons2 {
   display: flex;
   justify-content: space-between;
   flex: 1;
   height: 70px;
   color: rgb(75, 70, 70);
+  
 }
-
 .plus {
   border: solid 2px black;
   border-radius: 10px;
@@ -85,15 +84,15 @@ h1 {
   margin-right: 3px;
   font-size: 30px;
   transition: 0.15s;
+  &:hover {
+    background-color: rgba(32, 194, 46, 0.992);
+    box-shadow: 3px 3px 5px;
+  }
+  &:active {
+    background-color: rgba(4, 84, 11, 0.81);
+  }
+  
 }
-.plus:hover {
-  background-color: rgba(32, 194, 46, 0.992);
-  box-shadow: 3px 3px 5px;
-}
-.plus:active {
-  background-color: rgba(4, 84, 11, 0.81);
-}
-
 .minus {
   border: solid 2px black;
   border-radius: 10px;
@@ -101,15 +100,15 @@ h1 {
   font-size: 40px;
   padding-bottom: 5px;
   transition: 0.15s;
+  &:hover {
+    background-color: rgb(230, 22, 22);
+    box-shadow: 3px 3px 5px;
+  }
+  &:active {
+    background-color: rgba(117, 19, 32, 0.984);
+  }
+  
 }
-.minus:hover {
-  background-color: rgb(230, 22, 22);
-  box-shadow: 3px 3px 5px;
-}
-.minus:active {
-  background-color: rgba(117, 19, 32, 0.984);
-}
-
 .times {
   border: solid 2px black;
   border-radius: 10px;
@@ -118,28 +117,29 @@ h1 {
   font-size: 30px;
   padding-top: 7px;
   transition: 0.15s;
+  &:hover {
+    background-color: rgb(30, 207, 207);
+    box-shadow: 3px 3px 5px;
+  }
+  &:active {
+    background-color: rgba(27, 174, 174, 0.763);
+  }
+  
 }
-.times:hover {
-  background-color: rgb(30, 207, 207);
-  box-shadow: 3px 3px 5px;
-}
-.times:active {
-  background-color: rgba(27, 174, 174, 0.763);
-}
-
 .divide {
   border: solid 2px black;
   border-radius: 10px;
   width: 50%;
   font-size: 30px;
   transition: 0.15s;
-}
-.divide:hover {
-  background-color: rgb(234, 227, 21);
-  box-shadow: 3px 3px 5px;
-}
-.divide:active {
-  background-color: rgba(192, 178, 17, 0.778);
+  &:hover {
+    background-color: rgb(234, 227, 21);
+    box-shadow: 3px 3px 5px;
+  }
+  &:active {
+    background-color: rgba(192, 178, 17, 0.778);
+  }
+  
 }
 
 .button-result {
@@ -150,15 +150,14 @@ h1 {
   height: 60px;
   color: rgb(75, 70, 70);
   transition: 0.15s;
+  &:hover {
+    background-color: rgba(198, 201, 201, 0.982);
+    box-shadow: 3px 3px 5px;
+  }
+  &:active {
+    background-color: rgba(26, 29, 29, 0.437);
+  }
 }
-.button-result:hover {
-  background-color: rgba(198, 201, 201, 0.982);
-  box-shadow: 3px 3px 5px;
-}
-.button-result:active {
-  background-color: rgba(26, 29, 29, 0.437);
-}
-
 .equal {
   text-align: center;
   border: solid 2px black;
@@ -169,10 +168,10 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(232, 229, 229);
 }
-
 h2 {
   margin-bottom: 15px;
   margin-top: 10px;
+  
 }
 
 @media (max-width: 450px) {
@@ -189,6 +188,7 @@ h2 {
   }
   .first-number {
     font-size: 10px;
+    
   }
   .second-number {
     font-size: 10px;
@@ -197,32 +197,39 @@ h2 {
     height: 40px;
     margin-bottom: 10px;
     margin-top: 15px;
+  
   }
   .buttons2 {
     height: 40px;
     margin-bottom: 10px;
     margin-top: 15px;
+    
   }
   .plus {
     font-size: 15px;
+    
   }
   .minus {
     font-size: 15px;
+    
   }
   .times {
     font-size: 15px;
+    
   }
   .divide {
     font-size: 15px;
   }
+  
   .button-result {
     font-size: 15px;
     margin-top: 20px;
     height: 40px;
   }
   .equal {
+    
     height: 60px;
     font-size: 15px;
     letter-spacing: 4px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
